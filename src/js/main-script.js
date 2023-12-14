@@ -13,8 +13,8 @@ $(function () {
 
 
 $(window).on('load', function () {
-    // $('#status').fadeOut();
-    // $('#preloader').delay(350).fadeOut('slow');
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
 
 
     $('.banner h1').addClass('animate__animated animate__fadeInDown animate__slow')

@@ -124,6 +124,33 @@ h4 {
   transition: var(--transition);
 }
 
+
+/*
+=================
+preloader
+=================
+ */
+ #status {
+  background: url("../images/preloader.gif");
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#preloader {
+  background-color: var(--clr-white);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
 /*
 =================
 navbar
