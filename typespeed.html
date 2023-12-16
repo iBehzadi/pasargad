@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="a wabsite based on jquery library" />
+    <link rel="shortcut icon" href="./src/img/favicon.ico" />
+    <link rel="stylesheet" href="./src/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./src/css/animate.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Testing Project</title>
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="status">
+            <!-- <img src="./src/images/preloader.gif" alt=""> -->
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="nav-logo">
+            <img src="./src/images/logo/logo.png" alt="" class="logo-img">
+        </div>
+        <span class="nav-icon">
+            <i class="bi bi-list"></i>
+        </span>
+
+    </div>
+
+    <div class="nav-background"></div>
+    <nav class="nav-menu">
+        <div class="nav-menu-header">
+            <span class="nav-close">
+                <i class="bi bi-x"></i>
+            </span>
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a class="nav-link" href="index.html">
+                    <i class="bi bi-house-add-fill"></i>
+                    صفحه اصلی
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#about">
+                    <i class="bi bi-info-circle-fill"></i>
+                    درباره ما
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#services">
+                    <i class="bi bi-server"></i>
+                    خدمات
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#products">
+                    <i class="bi bi-box-seam-fill"></i>
+                    محصمولات
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#contact">
+                    <i class="bi bi-messenger"></i>
+                    تماس با ما
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="typespeed.html">
+                    <i class="bi bi-pencil-fill"></i>
+                    تست سرعت تایپ
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- type speed checker -->
+    <section class="section-center typecheck">
+        <article class="typecheck-info">
+            <div class="section-title">
+                <h3>سنجش سرعت تایپ</h3>
+            </div>
+            <p class="typecheck-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                تکنولوژی
+                مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می با، حال
+                و آینده شناخت فراواصان را می طلبد </p>
+        </article>
+
+        <article class="typecheck-box">
+            <div class="typecheck-test-text">
+                <p>text input</p>
+            </div>
+            <textarea class="typecheck-input" name="typechecker" cols="45" rows="10"></textarea>
+            <div class="check-timer">
+                <h3 class="timer-wrapper">00:00:00</h3>
+                <button class="btn-primary typecheck-reset">شروع مجدد</button>
+            </div>
+        </article>
+    </section>
+    <!-- end of type speed checker -->
+
+    <footer class="footer">
+        <div class="section-center">
+            <div class="social-icnos">
+                <a class="social-icon" href="https://telegram.me/ibehzadi">
+                    <i class="bi bi-telegram"></i>
+                </a>
+
+                <a class="social-icon" href="">
+                    <i class="bi bi-twitter"></i>
+                </a>
+
+                <a class="social-icon" href="https://www.instagram.com/behzad.1997">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+            <h4 class="footer-text">
+                <span>Google.com</span>
+                کلیه حقوق محفوظ است پس تلاش بیخودی در رابطه با کپی برداری نکنید.
+            </h4>
+        </div>
+    </footer>
+
+    <script src="./src/vendor/jquery-3.7.1.min.js"></script>
+    <script src="./src/vendor/wow.min.js"></script>
+    <script src="./src/js/main-script.js"></script>
+    <script src="./src/js/typespeed.js"></script>
+
+</body>
+
+</html>
