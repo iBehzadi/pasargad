@@ -10,7 +10,6 @@ $(window).on('load', function () {
 
 
 $(function () {
-    new WOW().init();
 
     //nav menu button actions
     $('.nav-icon').on('click', function() {
@@ -23,8 +22,7 @@ $(function () {
     })
 
     //navlink scroll
-    $('a.nav-link').on('click', function(event){
-        //event.preventDefault()
+    $('a.nav-link').on('click', function(){
         $('.nav-menu').removeClass('menu-collapse')
         $('.nav-background').hide()
 
