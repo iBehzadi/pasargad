@@ -24,7 +24,7 @@ $(function () {
 
     //navlink scroll
     $('a.nav-link').on('click', function(event){
-        event.preventDefault()
+        //event.preventDefault()
         $('.nav-menu').removeClass('menu-collapse')
         $('.nav-background').hide()
 

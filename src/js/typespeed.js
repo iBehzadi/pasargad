@@ -1,9 +1,9 @@
 
+/*eslint semi: ["error", "always"] */
 const timerWrapper = $('.timer-wrapper');
-const originText = $('.typecheck-test-text p').text()
+const originText = $('.typecheck-test-text p').text();
 const textArea = $('.typecheck-input');
 const resetBtn = $('.typecheck-reset');
-
 
 var timer = [0, 0, 0, 0];
 var timerInterval;
@@ -11,16 +11,16 @@ var timeRunning = false;
 
 function leadingZero(time) {
     if (time <= 9) {
-        time = "0" + time
+        time = "0" + time;
     }
-    return time
+    return time;
 }
 
 function runTimer() {
 
-    let currentTime = leadingZero(timer[0]) + ":" + leadingZero(timer[1]) + ":" + leadingZero(timer[2])
+    let currentTime = leadingZero(timer[0]) + ":" + leadingZero(timer[1]) + ":" + leadingZero(timer[2]);
 
-    timerWrapper.html(currentTime)
+    timerWrapper.html(currentTime);
     timer[3]++;
 
     //timer
@@ -35,7 +35,7 @@ function spellCheck() {
 
     if (textEntered == originText) {
         textArea.css('border', '5px solid green');
-        clearInterval(timerInterval)
+        clearInterval(timerInterval);
     } else {
         if (textEntered == originTextMatch) {
             textArea.css('border', '5px solid yellow');
@@ -52,10 +52,9 @@ function resetAll () {
     clearInterval(timerInterval);
 
     timerWrapper.text('00:00:00');
-    textArea.val('')
-    textArea.css('border', '1px solid ')
+    textArea.val('');
+    textArea.css('border', '1px solid ');
 }
-
 
 $(function () {
     $('.typecheck-input').on({
@@ -63,17 +62,17 @@ $(function () {
             if ($(this).val() == "" && !timeRunning) {
                 timeRunning = true;
                 timerInterval = setInterval(() => {
-                    runTimer()
+                    runTimer();
                 }, 10);
             }
         },
-        keyup: function () { spellCheck() }
+        keyup: function () { spellCheck(); }
     });
 
     resetBtn.on('click', function(){
-        resetAll()
-    })
+        resetAll();
+    });
 
-})
+});
 
-$(window).on('load', resetAll)
+$(window).on('load', resetAll);

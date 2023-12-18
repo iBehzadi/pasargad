@@ -1,0 +1,23 @@
+{
+  "name": "first-website-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iBehzadi/pasargad.git"
+  },
+  "author": "behzad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iBehzadi/pasargad/issues"
+  },
+  "homepage": "https://github.com/iBehzadi/pasargad#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-jquery": "^3.0.2"
+  }
+}
