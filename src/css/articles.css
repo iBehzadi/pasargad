@@ -8,5 +8,6 @@ p {
 }
 .article {
     direction: rtl;
+    margin-top: 10px;
     text-align: justify;
 }
