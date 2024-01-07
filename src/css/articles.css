@@ -1,0 +1,12 @@
+.blockquote {
+  border-right: 0.5rem solid #993366;
+  margin: 1rem 0;
+}
+p {
+  font-size: 16px;
+  line-height: 1.9em;
+}
+.article {
+    direction: rtl;
+    text-align: justify;
+}
